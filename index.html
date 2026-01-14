@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="intro">
+      <h1>Simple Calculator</h1>
+      <p>Practice HTML, CSS, and JavaScript — responsive and keyboard-friendly.</p>
+    </section>
+
+    <section class="calculator-wrapper" aria-label="Calculator application">
+      <div class="calculator" role="application" aria-labelledby="calc-title">
+        <div class="display">
+          <div class="previous-operand" data-previous></div>
+          <div class="current-operand" data-current>0</div>
+        </div>
+
+        <div class="buttons-grid">
+          <button class="span-two" data-all-clear>AC</button>
+          <button data-delete>DEL</button>
+          <button data-operation="/">÷</button>
+
+          <button data-number>7</button>
+          <button data-number>8</button>
+          <button data-number>9</button>
+          <button data-operation="*">×</button>
+
+          <button data-number>4</button>
+          <button data-number>5</button>
+          <button data-number>6</button>
+          <button data-operation="-">−</button>
+
+          <button data-number>1</button>
+          <button data-number>2</button>
+          <button data-number>3</button>
+          <button data-operation="+">+</button>
+
+          <button data-number>0</button>
+          <button data-number>.</button>
+          <button class="span-two" data-equals>=</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="notes">
+      <small>Keyboard: numbers, ., + - * /  Enter(=), Backspace(DEL), Esc(AC)</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
